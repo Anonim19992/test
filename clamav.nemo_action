@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Scan for viruses files/folders
+Comment=Scan for viruses "%F"
+Name[ru]=Проверить на вирусы файлы/папки
+Comment[ru]=Проверить на вирусы "%F"
+Exec=sh -c ""$HOME"/.local/share/nemo/actions/clamav.sh %F"
+Selection=any
+Extensions=any;
+Icon-Name=clamav
+Quote=single
+Dependencies=clamscan;find;awk;
